@@ -49,7 +49,7 @@ Requires ESP-IDF v5.5.0 or higher. Please refer to the [Xiaozhi Compilation Envi
 **2. Compile and Flash**:
 First, clone this repository locally:
 ```bash
-git clone https://github.com/12345
+git clone https://github.com/pku-netvideo/McpRTC.git
 ```
 Then, open the **ESP-IDF Powershell**, navigate to the project directory, and build the firmware:
 ```bash
@@ -72,6 +72,16 @@ After deployment, you need to change the LLM to Gemini in the control panel and 
 ⚠️ **Note**: This is an experimental project. Currently, it supports the Lichuang Dev Board Practical S3 as the hardware platform; more platforms will be supported in the future. In the current version, the LLM can use tools like `start_rtc_stream` and `stop_rtc_stream` to actively control the video stream. Additionally, **McpRTC** supports dynamic adjustment of **bitrate and frame rate** at the framework level. However, due to the hardware performance limitations of the S3, while the tool interfaces are implemented, they are not yet actively called by the LLM in the default demo.
 
 ## ️✨ Demo
+https://github.com/user-attachments/assets/c317a03e-c4b4-4290-bdbc-f33bc44ff41c
+
+This video demonstrates the camera's on/off status through real-time power consumption monitoring. You can observe the power fluctuations across different operating modes:
+
+- **Audio Only Mode**: Power fluctuates around **1.1W**.
+- **Video Stream On**: When the WebRTC connection is established and the video stream is enabled, power rises to approximately **1.4W**.
+- **Video Stream Off**: When the video stream is disabled (while maintaining the RTC connection), power drops to approximately **1.3W**.
+
+> [!NOTE]
+> This distinct step in power consumption serves as a physical indicator to verify whether the camera is active.
 
 ## 🏗 Acknowledgement
 
