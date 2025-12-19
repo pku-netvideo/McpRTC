@@ -83,6 +83,9 @@ https://github.com/user-attachments/assets/279b6baf-844d-4e49-9111-cbd73ebee5b4
 > [!NOTE]
 > 感觉功率增加不大？这是由于S3开发板算力较弱，仅支持320x240@2fps视频传输，采集和编码开销都不大，因此相较于audio-only功率提升不显著。对于算力更强的终端设备，高帧率&高分辨率下McpRTC的收益会更显著；
 
+> [!NOTE]
+> 感觉响应延迟大？本样例的VLM模型并非本地部署，而是通过API调用。端到端延迟主要来自于API调用，不同VLM的响应速度见：[4.2 大语言模型(LLM)响应速度对比](https://github.com/xinnan-tech/xiaozhi-performance-research)；
+
  
 ## 🏗 致谢 (Acknowledgement)
 

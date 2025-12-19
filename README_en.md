@@ -85,7 +85,10 @@ The real-time power consumption fluctuations intuitively show the on/off status 
 - **Video-Audio Dialogue**: After turning on the real-time video stream, the power rises to around **1.4W**.
 
 > [!NOTE]
-> Feel that the power increase is not significant? This is because the S3 board has limited computing power and only supports 320x240@2fps video transmission. The acquisition and encoding overheads are small, so the power increase is not significant compared to audio-only. For terminal devices with stronger computing power, the benefits of McpRTC under high frame rate & high resolution will be more significant.
+> Why is the power increase small? This is because the S3 board has limited computing power and only supports 320x240@2fps video transmission. The acquisition and encoding overheads are small, so the power increase is not significant compared to audio-only. For terminal devices with stronger computing power, the benefits of McpRTC under high frame rate & high resolution will be more significant.
+
+> [!NOTE]
+> Experiencing high latency? The VLM model in this demo is not deployed locally but accessed via API. The end-to-end latency primarily stems from API overhead. For a comparison of response speeds across different VLMs, see: [4.2 LLM Response Speed Comparison](https://github.com/xinnan-tech/xiaozhi-performance-research).
 
 ## 🏗 Acknowledgement
 
