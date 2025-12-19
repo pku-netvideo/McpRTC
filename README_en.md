@@ -77,7 +77,8 @@ https://github.com/user-attachments/assets/279b6baf-844d-4e49-9111-cbd73ebee5b4
 
 The video above demonstrates McpRTC under Agent control, autonomously turning on the video on demand:
 
-When the user dialogue does not require video, the video stream is closed (unlike mainstream VAD solutions where user speech triggers video transmission); when the dialogue relies on visual information, the Agent autonomously turns on the video.
+- When the user dialogue does not require video, the video stream is closed (unlike mainstream VAD solutions where user speech triggers video transmission). 
+- When the dialogue relies on visual information, the Agent autonomously turns on the video.
 
 The real-time power consumption fluctuations intuitively show the on/off status of the video stream. The power consumption changes under different working modes are as follows:
 
